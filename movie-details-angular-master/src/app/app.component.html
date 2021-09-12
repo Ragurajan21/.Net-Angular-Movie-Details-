@@ -1,0 +1,11 @@
+<div *ngIf ="isLogin" class="center">
+  <div class="button">
+    <button  (click)="loginWithGoogle()" class="button">Login to continue</button>
+  </div>
+</div>
+<div  *ngIf="!isLogin">
+  <app-search-bar (sort_by_emitter) = "sort_by_emitter($event)" (search) = "searchString($event)"></app-search-bar>
+    <div class="movie-card-wrapper" *ngFor = "let movie of display_movies2">
+         <app-movie-card (launchDetailsCard) = "showCard($event)" [movie] = "movie" ></app-movie-card>
+      </div>
+</div>

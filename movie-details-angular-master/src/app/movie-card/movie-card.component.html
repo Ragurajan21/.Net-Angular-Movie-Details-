@@ -1,0 +1,7 @@
+<div class="card" [style.backgroundImage]="'url('+ movie.Poster +')'" (click) = "launchIt($event)">
+    <h3>{{ movie.Title }}</h3>
+    <h4>{{ movie.Language }}</h4>
+    <h5 >IMDB Rating :{{ movie.imdbRating}}</h5>
+    <h5 > {{ movie.Location }}</h5>
+    <h5 >{{ movie.listingType}}</h5>
+</div>

@@ -1,0 +1,14 @@
+<div>
+    <h3>{{ data.movie.Title }}</h3>
+    <angular-image-slider
+    [autoRotate]="true"
+    [autoRotateAfter]="5000"
+    [autoRotateRight]="true"
+    [images]="imagesstills"
+  ></angular-image-slider>
+    <h4>Language : {{ data.movie.Language }}</h4>
+    <h5 >Imdb Rating : {{ data.movie.imdbRating}} </h5>
+    <h5>Location : {{data.movie.Location}}</h5>
+    <p ><b>Plot :</b> {{ data.movie.Plot  }}</p>
+  
+</div>
